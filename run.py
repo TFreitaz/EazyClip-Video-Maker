@@ -152,3 +152,5 @@ class VideoGenerator:
                 background.save(f'{self.path}/{self.img_folder}/{new_folder}/{name}.png')
         
 vg = VideoGenerator()
+
+window.mainloop()
