@@ -1,7 +1,7 @@
 # EazyClip-Video-Maker
 <p>Making videos easily from images.</p>
 <p>The will behind this project is to turn easy to create a video from a sequence of images. In fact, this is already not hard, but I saw it would be easier as it's a few ways work.</p>
-### Using it
+<h3>Using it</h3>
 <p> By now the using flux follows the below:</p>
 <ul>
     <li>Create a folder with (and only with) all the files you want in your videoclip;</li>
@@ -17,7 +17,7 @@
     </li>
     <li>Click "Gerar video" (generate video) to start the process. By now the window is getting freezed the building time along, but it comes back when the rendering is over.</li>
 </ul>
-### Future Features
+<h3>Future Features</h3>
 <p>This is just a MVP, and with this point of the project I've already achieved my first goal turning my work easy. By now these are the features I want to add:</p>
 <ul>
     <li><b>Each image duration set</b>: Allow the user to set each image duration seeing a miniature of it on the window.</li>
