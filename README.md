@@ -20,6 +20,7 @@
 <h3>Future Features</h3>
 <p>This is just a MVP, and with this point of the project I've already achieved my first goal turning my work easy. By now these are the features I want to add:</p>
 <ul>
+    <li><b>Executable file</b>: Turn the platform into a executable program;</li>
     <li><b>Each image duration set</b>: Allow the user to set each image duration seeing a miniature of it on the window.</li>
     <li><b>Notifications</b>: Send a alert when the video is done. It will be:
         <ul>
