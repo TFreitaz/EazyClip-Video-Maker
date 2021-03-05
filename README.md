@@ -2,7 +2,7 @@
 <p>Making videos easily from images.</p>
 <p>The will behind this project is to turn easy to create a video from a sequence of images. In fact, this is already not hard, but I saw it would be easier as it's a few ways work.</p>
 <h3>Using it</h3>
-<p> By now the using flux follows the below:</p>
+<p> By now the using flow follows the below:</p>
 <ul>
     <li>Create a folder with (and only with) all the files you want in your videoclip;</li>
     <li>Run run.py to open EazyClip;</li>
