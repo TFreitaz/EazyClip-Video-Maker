@@ -22,6 +22,7 @@
 <p>Some bugs were found, and in order to deal with them until I fix them, I've listed some tips to use the application with no problems.</p>
 <ul>
     <li><b>The window doesn't show the progress until the video is built:</b> after start the video building, you won't be able to do anything in the app window, as it will seems like it's not working. But trust me: it is working, and your video will be done. Just wait the window returns. To check up the progress, give a look at the prompt from where you ran the app.</li>
+</ul>
 <h3>Future Features</h3>
 <p>This is just a MVP, and with this point of the project I've already achieved my first goal turning my work easy. By now these are the features I want to add:</p>
 <ul>
