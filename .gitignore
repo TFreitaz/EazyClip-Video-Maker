@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Usage files and folders
+*.mp4
+*.jpg
+*.png
+*.jpeg
