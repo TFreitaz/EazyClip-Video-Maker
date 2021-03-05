@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import filedialog, ttk
 from moviepy.editor import *
 from PIL import Image
+import platform
 import shutil
 import os
 
@@ -17,6 +18,7 @@ class VideoGenerator:
         self.img_folder = None
         self.audio = IntVar()
         self.audiofile = None
+        self.system = platform.system()
         self.convert_text = Label(window, text="Selecione a pasta dos arquivos para o clip.")
         self.convert_text.grid(column=0, row=0, padx=5, pady=5)
         self.convert_entry = Entry(window, width=60)
@@ -70,7 +72,9 @@ class VideoGenerator:
                 self.img_duration_entry.destroy()
 
     def select_folder(self):
-        self.path = filedialog.askdirectory(initialdir="/", title="Selecionar pasta").replace("/", "\\")
+        self.path = filedialog.askdirectory(initialdir="/", title="Selecionar pasta")
+        if self.system != "Darwin":
+            self.path = self.path.replace("/", "\\")
         self.convert_entry.delete(0, "end")
         self.convert_entry.insert(END, self.path)
 
@@ -149,6 +153,18 @@ class VideoGenerator:
             raise Exception("Audio file not found.")
 
     def search_images_folder(self):
+        found = False
+        tries = 0
+        while not found and tries < 3:
+            try:
+                _ = os.listdir(self.path)
+                found = True
+            except Exception:
+                if tries % 2 == 0:
+                    self.path = self.path.replace("\\", "/")
+                else:
+                    self.path = self.path.replace("/", "\\")
+
         if any(any(file.endswith(img_format) for img_format in self.img_formats) for file in os.listdir(self.path)):
             self.img_folder = "Images"
             if self.img_folder not in os.listdir(self.path):
